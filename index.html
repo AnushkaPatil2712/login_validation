@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav_items">
+        <li class="items">
+            <a href="#" class="link">Home</a>
+            <a href="#" class="link">About</a>
+            <a href="#" class="link">Services</a>
+            <a href="#" class="link">Contact</a>
+        </li>
+        </ul>
+            <button class="button" id="login">Login</button>
+            <button class="button" id="signup">SignUp</button>
+    </div>
+    <div class="loginform" >
+        <form name="form1" onsubmit="return validate()" action="msg.html">
+            <div class="log">
+            <h1>LOGIN</h1>
+            </div>
+        <p>Username</p>
+        <input type="text" id="text1" placeholder="  Enter your name"> 
+        <!-- <label id="lb1" style="color:red;visibility:hidden">Invalid</label> -->
+        <p>Email</p>
+        <input type="text" id="text2" placeholder="  Enter your email">
+        <!-- <label id="lb1" style="color:red;visibility:hidden">Invalid</label> -->
+        <p>Password</p>
+        <input type="text"  id="text3" placeholder="  Enter Password">
+        <!-- <label id="lb1" style="color:red;visibility:hidden">Invalid</label> -->
+        <div class="option_field">
+            <a href="#" class="forgot_pw">forgot password?</a>
+        </div> 
+        <button class="login_now"  type="submit">login now</button>   
+        </form>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
